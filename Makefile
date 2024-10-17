@@ -8,12 +8,12 @@ DATA_DIR := data
 INC_DIR := include  # Add this for header files
 
 # Server files
-SERVER_SRCS := $(wildcard $(SRC_DIR)/server/*.c)
+SERVER_SRCS := $(wildcard $(SRC_DIR)/server/*.c) $(SRC_DIR)/server/encrypt_decrypt.c $(SRC_DIR)/server/server_logger.c
 SERVER_OBJS := $(patsubst $(SRC_DIR)/server/%.c, $(OBJ_DIR)/server/%.o, $(SERVER_SRCS))
 SERVER_EXEC := $(BIN_DIR)/server
 
 # Client files
-CLIENT_SRCS := $(wildcard $(SRC_DIR)/client/*.c)
+CLIENT_SRCS := $(wildcard $(SRC_DIR)/client/*.c) $(SRC_DIR)/client/encrypt_decrypt.c $(SRC_DIR)/client/client_logger.c
 CLIENT_OBJS := $(patsubst $(SRC_DIR)/client/%.c, $(OBJ_DIR)/client/%.o, $(CLIENT_SRCS))
 CLIENT_EXEC := $(BIN_DIR)/client
 

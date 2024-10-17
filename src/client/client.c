@@ -5,7 +5,10 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 //#include "encrypt_decrypt.c"
-#include "/home2/user18/GROUP3_SPRINT_EXECUTION/include/functions.h"
+#include "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/include/functions.h"
+#include "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/include/client_functions.h"
+#include "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/include/logger.h"
+
 #define BUFFER_SIZE 1024
 
 void login_or_register(int sockfd) {
@@ -16,6 +19,12 @@ void login_or_register(int sockfd) {
     printf("1. Login\n2. Register\nChoose an option: ");
     scanf("%d", &choice);
     getchar(); // Consume newline
+	
+	
+	
+	log_message(INFO,"client.c","Client login/register request sent");
+
+
 
     printf("Enter username: ");
     fgets(username, sizeof(username), stdin);
@@ -61,18 +70,40 @@ int main() {
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd < 0) {
         perror("Socket creation failed");
-        return 1;
+
+
+
+    	log_message(FATAL,"client.c","Socket creation failed");
+		
+		
+		return 1;
     }
 
     server_addr.sin_family = AF_INET;
     server_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
     server_addr.sin_port = htons(5669);
+	
+
+	log_message(INFO,"client.c","Client socket created");
+
+
 
     if (connect(sockfd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
         perror("Connection failed");
         close(sockfd);
-        return 1;
+    	
+
+		log_message(FATAL,"client.c","Connection failed");
+
+
+
+		return 1;
     }
+
+
+	log_message(INFO,"client.c","Connected to server");
+
+
 
     // Call the login/register function
     login_or_register(sockfd);
@@ -100,6 +131,12 @@ int main() {
     }
 
     close(sockfd);
-    return 0;
+    
+
+	log_message(INFO,"client.c","Client disconnected");
+
+
+	
+	return 0;
 }
 

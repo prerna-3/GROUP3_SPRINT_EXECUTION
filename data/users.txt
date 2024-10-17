@@ -12,3 +12,7 @@ deepthi:1234
 shr:vku
 sm:vp
 pr:su
+shai:vk
+soi:vu
+ger:vg
+awd:ij

@@ -5,8 +5,9 @@
 #include <string.h>
 #include <unistd.h>
 #include <pthread.h>
-#include "/home2/user18/GROUP3_SPRINT_EXECUTION/include/functions.h"
-
+#include "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/include/functions.h"
+#include "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/include/server_functions.h"
+#include "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/include/logger.h"
 #define BUFFER_SIZE 1024
 
 extern int client_sockets[MAX_CLIENTS]; // Client socket array
@@ -17,9 +18,17 @@ void *handle_client(void *arg) {
     free(arg); // Free the allocated memory for client socket pointer
     char buffer[BUFFER_SIZE];
     char username[BUFFER_SIZE] = ""; // Store username after login
- 
+    
+
+//	log_info("Client connected on socket %d",client_socket);
+
+
+
     while (1) {
         int bytes_received = recv(client_socket, buffer, sizeof(buffer), 0);
+        
+
+//		log_info("Recieved message from client %d: %s", client_socket, buffer);
         if (bytes_received <= 0) {
             printf("Client disconnected: %d\n", client_socket);
             break; // Connection closed

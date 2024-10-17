@@ -7,8 +7,9 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <pthread.h>
-#include "/home2/user18/GROUP3_SPRINT_EXECUTION/include/functions.h"
-
+#include "functions.h"
+#include "server_functions.h"
+#include "logger.h"
 
 #define MAX_CLIENTS 100
 
@@ -25,17 +26,41 @@ int main() {
     server_addr.sin_addr.s_addr = INADDR_ANY;
     server_addr.sin_port = htons(5669);
 
+	
+	
+	log_message(INFO,"server.c","Serve socket created");
+
+
+
+
     bind(server_socket, (struct sockaddr *)&server_addr, sizeof(server_addr));
     listen(server_socket, 5);
+	
+
+	log_message(INFO,"server.c","Server is listening on port 5669");
+
+
 
     printf("Server is listening on port 5669...\n");
 
     while (1) {
         client_socket = accept(server_socket, (struct sockaddr *)&client_addr, &addr_len);
         if (client_socket < 0) {
-            perror("Accept failed");
-            continue; // Handle error, try accepting again
+           perror("Accept failed");
+           
+
+
+		   log_message(WARN,"server.c","Client connection failed");
+
+
+
+		   continue; // Handle error, try accepting again
         }
+
+
+		log_message(INFO,"server.c","Client connected");
+
+
 
         // Allocate memory for the client socket
         int *new_sock = malloc(sizeof(int));
@@ -47,5 +72,10 @@ int main() {
     }
 
     close(server_socket);
-    return 0;
+    
+	
+	log_message(INFO,"server.c","Server shutdown");
+
+
+	return 0;
 }

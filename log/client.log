@@ -1,0 +1,18 @@
+[2024-10-17 17:01:24] [INFO] Client socket created
+[2024-10-17 17:01:24] [INFO] Connected to server
+[2024-10-17 17:01:26] [INFO] Client login/register request sent
+[2024-10-17 17:01:31] [DEBUG] Message sent: REGISTER:ger:vg
+[2024-10-17 17:01:34] [DEBUG] Message sent: jhh
+[2024-10-17 17:01:37] [DEBUG] Message sent: kuooo
+[2024-10-17 17:05:33] [INFO] Client socket created
+[2024-10-17 17:05:33] [INFO] Connected to server
+[2024-10-17 17:05:44] [INFO] Client login/register request sent
+[2024-10-17 17:05:48] [DEBUG] Message sent: LOGIN:ger:vg
+[2024-10-17 17:05:52] [DEBUG] Message sent: khh
+[2024-10-17 17:06:05] [INFO] Client socket created
+[2024-10-17 17:06:05] [INFO] Connected to server
+[2024-10-17 17:06:11] [INFO] Client login/register request sent
+[2024-10-17 17:06:16] [DEBUG] Message sent: REGISTER:awd:ij
+[2024-10-17 17:06:20] [DEBUG] Message sent: khoooorr
+[2024-10-17 17:06:40] [WARN] Connection closed or error
+[2024-10-17 17:06:40] [WARN] Connection closed or error

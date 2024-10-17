@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include "/home2/user18/GROUP3_SPRINT_EXECUTION/include/functions.h"
+#include "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/include/functions.h"
 
-#define USER_FILE "/home2/user18/GROUP3_SPRINT_EXECUTION/data/users.txt"
+#define USER_FILE "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/data/users.txt"
 #define BUFFER_SIZE 1024
 
 

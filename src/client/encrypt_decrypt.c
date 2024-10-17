@@ -1,5 +1,5 @@
 
-#include "/home2/user18/GROUP3_SPRINT_EXECUTION/include/functions.h" 
+#include "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/include/functions.h" 
 
 void encryption(char *text) {
     for (int i = 0; text[i] != '\0'; i++) {
