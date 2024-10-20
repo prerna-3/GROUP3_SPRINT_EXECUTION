@@ -1,0 +1,6 @@
+[2024-10-18 09:58:16] [INFO] Client socket created
+[2024-10-18 09:58:16] [INFO] Connected to server
+[2024-10-18 09:58:20] [INFO] Client login/register request sent
+[2024-10-18 09:58:24] [DEBUG] Message sent: LOGIN:sd:vg
+[2024-10-18 09:58:27] [DEBUG] Message sent: higvg
+[2024-10-18 09:58:33] [WARN] Connection closed or error

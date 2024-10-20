@@ -1,10 +1,28 @@
+/***************************************************************************
+*   FILENAME : client.c   
+*   Owner : Group 3            Date : 15/10/24
+*	
+*   DESCRIPTION:The program allows the user to either login or register by interacting with a server.
+                After successful authentication, the client can send and receive messages in a chat environment
+
+
+*   REVISION HISTORY:
+
+*   Name : Pranavya Deepthi Dachepalli             Date : 16/10/24
+*   Reason : For establishing client and server connection
+
+*   Name : Priyanka Solanki, Shaista Parveen       Date : 17/10/24
+*   Reason : integrating logger file
+
+*****************************************************************************/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <pthread.h>
-//#include "encrypt_decrypt.c"
 #include "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/include/functions.h"
 #include "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/include/client_functions.h"
 #include "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/include/logger.h"
@@ -17,7 +35,11 @@ void login_or_register(int sockfd) {
     char buffer[BUFFER_SIZE];
 
     printf("1. Login\n2. Register\nChoose an option: ");
-    scanf("%d", &choice);
+    if( scanf("%d", &choice)!=1){
+    perror("Invalid input for choice");
+	log_message(FATAL, "client.c","Invalid input for login/register choice");
+	exit(1);
+	}
     getchar(); // Consume newline
 	
 	
@@ -27,12 +49,21 @@ void login_or_register(int sockfd) {
 
 
     printf("Enter username: ");
-    fgets(username, sizeof(username), stdin);
+    if(fgets(username, sizeof(username), stdin)==NULL){
+	perror("Error reading username");
+        log_message(FATAL, "client.c", "Error reading username");
+        exit(1);
+    }
+	
     username[strcspn(username, "\n")] ='\0'; // Remove newline character
 //	encryption(username);
 
     printf("Enter password: ");
-    fgets(password, sizeof(password), stdin);
+    if (fgets(password, sizeof(password), stdin) == NULL) {
+        perror("Error reading password");
+        log_message(FATAL, "client.c", "Error reading password");
+        exit(1);
+    }
     password[strcspn(password, "\n")] = '\0'; // Remove newline character
 	encryption(password);
 
@@ -42,23 +73,29 @@ void login_or_register(int sockfd) {
         snprintf(buffer, sizeof(buffer), "REGISTER:%s:%s", username, password);
     } else {
         printf("Invalid choice.\n");
+	    log_message(WARN, "client.c", "Invalid login/register choice");
         exit(1);
     }
 
     // Send the request to the server
-    send_message(sockfd, buffer);
-
+     send_message(sockfd, buffer);
     // Receive response from the server
-    recv(sockfd, buffer, sizeof(buffer), 0);
+    if (recv(sockfd, buffer, sizeof(buffer), 0) < 0) {
+        perror("Failed to receive server response");
+        log_message(FATAL, "client.c", "Failed to receive server response");
+        exit(1);
+    }
     printf("Server: %s\n", buffer);
-//	encryption(buffer);
     
     // If login/registration is successful, start the chat
     if (choice == 1 && strcmp(buffer, "Login successful") == 0) {
         printf("You can now start chatting!\n");
     } else if (choice == 2 && strcmp(buffer, "Registration successful") == 0) {
-        printf("You can now start chatting!\n");
+        printf("Registration successful, you can now login!\n");
+		close(sockfd);
+		exit(0);
     } else {
+	    log_message(WARN, "client.c", "Login/Registration failed");
         exit(1);
     }
 }
@@ -112,24 +149,31 @@ int main() {
     pthread_t recv_thread;
     if (pthread_create(&recv_thread, NULL, receive_messages, (void *)&sockfd) != 0) {
         perror("Failed to create thread for receiving messages");
+		log_message(FATAL, "client.c", "Failed to create thread for receiving messages");
         close(sockfd);
         return 1;
     }
 
-    pthread_detach(recv_thread); // Detach the thread to clean up automatically
+//    pthread_detach(recv_thread); // Detach the thread to clean up automatically
 
     // Main loop for sending messages
     char message[BUFFER_SIZE];
     while (1) {
-        fgets(message, sizeof(message), stdin);
+        if (fgets(message, sizeof(message), stdin) == NULL) {
+            perror("Error reading message");
+            log_message(FATAL, "client.c", "Error reading message from input");
+            break;
+        }
         message[strcspn(message, "\n")] = 0; // Remove newline character
         if (strcmp(message, "exit") == 0) {
             break; // Exit the chat
         }
 		encryption(message);
-        send_message(sockfd, message); // Use the existing send_message function
+	
+	  send_message(sockfd, message);
     }
-
+ 
+    pthread_join(recv_thread, NULL);
     close(sockfd);
     
 
@@ -139,4 +183,5 @@ int main() {
 	
 	return 0;
 }
+
 

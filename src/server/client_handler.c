@@ -1,4 +1,19 @@
-//#include "encrypt_decrypt.c"
+/***************************************************************************
+ *   FILENAME : client_handler.c
+ *   Owner : Group 3            Date : 15/10/24
+ *
+ *   DESCRIPTION:  This function handles client communication by receiving commands for registration, login, and message broadcasting.
+                   It manages client authentication, message broadcasting to other clients
+ *
+ *   REVISION HISTORY:
+ *
+ *   Name : Pranavya Deepthi Dachepalli             Date : 16/10/24
+ *   Reason : created function for handling client and server communication.
+ *
+ *   Name : Priyanka Solanki, Shaista Parveen       Date : 17/10/24
+ *   Reason : integrating logger file, and error handling
+ *
+ ***************************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,19 +31,10 @@ extern pthread_mutex_t mutex; // Mutex for thread safety
 void *handle_client(void *arg) {
     int client_socket = *(int *)arg;
     free(arg); // Free the allocated memory for client socket pointer
-    char buffer[BUFFER_SIZE];
+    char buffer[BUFFER_SIZE]={0};
     char username[BUFFER_SIZE] = ""; // Store username after login
-    
-
-//	log_info("Client connected on socket %d",client_socket);
-
-
-
     while (1) {
         int bytes_received = recv(client_socket, buffer, sizeof(buffer), 0);
-        
-
-//		log_info("Recieved message from client %d: %s", client_socket, buffer);
         if (bytes_received <= 0) {
             printf("Client disconnected: %d\n", client_socket);
             break; // Connection closed
@@ -54,11 +60,15 @@ void *handle_client(void *arg) {
                     }
                 }
                 pthread_mutex_unlock(&mutex);
-                send(client_socket, "Login successful", 16, 0);
-                printf("%s logged in successfully.\n", username);
+                if (send(client_socket, "Login successful", 16, 0) < 0) {
+                    perror("Failed to send login success message");
+                }
+				printf("%s logged in successfully.\n", username);
             } else {
-                send(client_socket, "Login failed", 12, 0);
-                printf("Login failed for %s.\n", username);
+                if (send(client_socket, "Login failed", 12, 0) < 0) {
+                    perror("Failed to send login failed message");
+                }
+				printf("Login failed for %s.\n", username);
             }
         } else {
             // If user is logged in, broadcast the message
@@ -69,8 +79,10 @@ void *handle_client(void *arg) {
                 printf("Message from %s: %s\n", username, buffer);
                 broadcast_message(full_message, client_socket);
             } else {
-                send(client_socket, "You must log in first", 22, 0);
-            }
+            	if (send(client_socket, "You must log in first", 22, 0) < 0) {
+                    perror("Failed to send login prompt message");
+                }
+			}
         }
     }
  

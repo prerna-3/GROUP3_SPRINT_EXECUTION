@@ -1,4 +1,22 @@
-//#include "encrypt_decrypt.c"
+/***************************************************************************
+ *   FILENAME : auth.c
+ *   Owner : Group 3            Date : 15/10/24
+ *
+ *   DESCRIPTION : This code handles user registration and authentication by storing usernames and passwords in a text file, 
+                   then verifying login attempts by comparing input credentials with stored data. It supports both registration and authentication,
+				   sending appropriate success or failure messages to the client.
+ *
+ *   REVISION HISTORY:
+ *
+ *   Name : Shrishti , Deepali             Date : 16/10/24
+ *   Reason : Function to authenticate clients
+ *
+ *   Name : Shaista Parveen, Priyanka Solanki       Date : 18/10/24
+ *   Reason : error handling
+ *
+ ***************************************************************************/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -31,8 +49,6 @@ int authenticate_user(const char *username, const char *password) {
     while (fgets(line, sizeof(line), file)) {
         char stored_username[BUFFER_SIZE], stored_password[BUFFER_SIZE];
         sscanf(line, "%[^:]:%s", stored_username, stored_password);
-//		decryption(stored_username);
-//		decryption(stored_password);
         if (strcmp(username, stored_username) == 0 && strcmp(password, stored_password) == 0) {
             fclose(file);
             return 1; // Authentication successful
@@ -46,15 +62,19 @@ int authenticate_user(const char *username, const char *password) {
 int handle_authentication(int client_socket, const char *username, const char *password, int is_registration) {
     if (is_registration) {
         register_user(username, password);
-        send(client_socket, "Registration successful", 23, 0);
+       if (send(client_socket, "Registration successful", 23, 0) < 0) {
+            perror("Failed to send registration success message");
+        }
         return 1; // Indicate registration success
     } else {
         if (authenticate_user(username, password)) {
 //			send(client_socket,"authentication successful",25,0);
             return 1; // Indicate login success
         } else {
-            send(client_socket, "Invalid credentials", 19, 0);
-            return 0; // Indicate login failure
+          if (send(client_socket, "Invalid credentials", 19, 0) < 0) {
+                perror("Failed to send invalid credentials message");
+            }
+		  return 0; // Indicate login failure
         }
     }
 }

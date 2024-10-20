@@ -1,3 +1,20 @@
+/***************************************************************************
+ *   FILENAME : client_logger.c
+ *   Owner : Group 3            Date : 17/10/24
+ *
+ *   DESCRIPTION: This file defines the log_message function, which logs messages to the client.log file with a timestamp 
+                  and severity level (DEBUG, INFO, WARN, FATAL). 
+ *
+ *   REVISION HISTORY:
+ *
+ *   Name : Pranavya Deepthi Dachepalli, Shrishti Maheshwari             Date : 17/10/24
+ *   Reason : For displaying log mesages
+ *
+ *   Name : Priyanka Solanki, Shaista Parveen       Date : 18/10/24
+ *   Reason : modified code
+ *
+ ***************************************************************************/
+
 #include "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/include/logger.h"
 
 void log_message(LogLevel level, const char *filename, const char *fmt, ...) {
@@ -21,4 +38,3 @@ void log_message(LogLevel level, const char *filename, const char *fmt, ...) {
     fprintf(logfile, "\n");
     fclose(logfile);
 }
-

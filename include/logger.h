@@ -12,6 +12,7 @@ typedef enum {
     FATAL
 } LogLevel;
 
+time_t t;
 void log_message(LogLevel level, const char *filename, const char *fmt, ...);
 
 #endif

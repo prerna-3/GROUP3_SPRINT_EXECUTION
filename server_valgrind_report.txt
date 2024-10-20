@@ -1,0 +1,54 @@
+==27500== Memcheck, a memory error detector
+==27500== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27500== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27500== Command: ./bin/server
+==27500== 
+==27500== 
+==27500== Process terminating with default action of signal 2 (SIGINT)
+==27500==    at 0x4E4F7C7: accept (accept.c:26)
+==27500==    by 0x1097B2: main (server.c:62)
+==27500== 
+==27500== HEAP SUMMARY:
+==27500==     in use at exit: 0 bytes in 0 blocks
+==27500==   total heap usage: 18 allocs, 18 frees, 24,650 bytes allocated
+==27500== 
+==27500== All heap blocks were freed -- no leaks are possible
+==27500== 
+==27500== For counts of detected and suppressed errors, rerun with: -v
+==27500== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==14428== Memcheck, a memory error detector
+==14428== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==14428== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==14428== Command: ./bin/server
+==14428== 
+==14428== 
+==14428== Process terminating with default action of signal 2 (SIGINT)
+==14428==    at 0x4E4F7C7: accept (accept.c:26)
+==14428==    by 0x1097B2: main (server.c:76)
+==14428== 
+==14428== HEAP SUMMARY:
+==14428==     in use at exit: 0 bytes in 0 blocks
+==14428==   total heap usage: 18 allocs, 18 frees, 24,650 bytes allocated
+==14428== 
+==14428== All heap blocks were freed -- no leaks are possible
+==14428== 
+==14428== For counts of detected and suppressed errors, rerun with: -v
+==14428== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==17958== Memcheck, a memory error detector
+==17958== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17958== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==17958== Command: ./bin/server
+==17958== 
+==17958== 
+==17958== Process terminating with default action of signal 2 (SIGINT)
+==17958==    at 0x4E4F7C7: accept (accept.c:26)
+==17958==    by 0x1097B2: main (server.c:76)
+==17958== 
+==17958== HEAP SUMMARY:
+==17958==     in use at exit: 0 bytes in 0 blocks
+==17958==   total heap usage: 18 allocs, 18 frees, 24,650 bytes allocated
+==17958== 
+==17958== All heap blocks were freed -- no leaks are possible
+==17958== 
+==17958== For counts of detected and suppressed errors, rerun with: -v
+==17958== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
