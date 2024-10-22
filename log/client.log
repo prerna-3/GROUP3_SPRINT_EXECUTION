@@ -662,3 +662,370 @@
 [2024-10-20 11:33:53] [INFO] Client login/register request sent
 [2024-10-20 11:34:11] [DEBUG] Message sent: LOGIN:sm:vp
 [2024-10-20 11:34:16] [DEBUG] Message sent: ijig
+[2024-10-21 05:10:20] [INFO] Client socket created
+[2024-10-21 05:10:20] [INFO] Connected to server
+[2024-10-21 05:10:25] [INFO] Client login/register request sent
+[2024-10-21 05:10:31] [DEBUG] Message sent: REGISTER:rrr:uuu
+[2024-10-21 05:11:23] [INFO] Client socket created
+[2024-10-21 05:11:23] [INFO] Connected to server
+[2024-10-21 05:11:29] [INFO] Client login/register request sent
+[2024-10-21 05:11:36] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-21 05:11:38] [DEBUG] Message sent: giyngien
+[2024-10-21 05:11:46] [DEBUG] Message sent: nknx
+[2024-10-21 05:11:55] [INFO] Client socket created
+[2024-10-21 05:11:55] [INFO] Connected to server
+[2024-10-21 05:11:57] [INFO] Client login/register request sent
+[2024-10-21 05:12:03] [DEBUG] Message sent: LOGIN:ghi:jkml
+[2024-10-21 05:12:03] [WARN] Login/Registration failed
+[2024-10-21 05:17:24] [INFO] Client socket created
+[2024-10-21 05:17:24] [INFO] Connected to server
+[2024-10-21 05:17:29] [INFO] Client login/register request sent
+[2024-10-21 05:17:35] [DEBUG] Message sent: REGISTER:ytt:lr
+[2024-10-21 05:17:39] [INFO] Client socket created
+[2024-10-21 05:17:39] [INFO] Connected to server
+[2024-10-21 05:17:41] [INFO] Client login/register request sent
+[2024-10-21 05:17:45] [DEBUG] Message sent: LOGIN:ytt:lr
+[2024-10-21 05:17:47] [DEBUG] Message sent: qepep
+[2024-10-21 05:17:51] [DEBUG] Message sent: kmnkk
+[2024-10-21 09:18:00] [INFO] Client socket created
+[2024-10-21 09:18:00] [INFO] Connected to server
+[2024-10-21 09:18:04] [INFO] Client login/register request sent
+[2024-10-21 09:18:12] [WARN] Invalid login/register choice
+[2024-10-21 15:51:35] [INFO] Client socket created
+[2024-10-21 15:51:35] [INFO] Connected to server
+[2024-10-21 15:51:37] [INFO] Client login/register request sent
+[2024-10-21 15:51:42] [DEBUG] Message sent: REGISTER:rtr:uwu
+[2024-10-21 15:51:50] [INFO] Client socket created
+[2024-10-21 15:51:50] [INFO] Connected to server
+[2024-10-21 15:51:51] [INFO] Client login/register request sent
+[2024-10-21 15:51:58] [DEBUG] Message sent: LOGIN:rtr:uwu
+[2024-10-21 15:52:00] [DEBUG] Message sent: giyig
+[2024-10-21 15:52:08] [INFO] Client socket created
+[2024-10-21 15:52:08] [INFO] Connected to server
+[2024-10-21 15:52:11] [WARN] invalid choice
+[2024-10-21 15:52:28] [INFO] Client socket created
+[2024-10-21 15:52:28] [INFO] Connected to server
+[2024-10-21 15:53:57] [INFO] Client login/register request sent
+[2024-10-21 15:54:01] [DEBUG] Message sent: REGISTER:rtr:uwu
+[2024-10-21 15:54:01] [WARN] Registration failed: User already registered
+[2024-10-21 15:54:30] [INFO] Client socket created
+[2024-10-21 15:54:30] [INFO] Connected to server
+[2024-10-21 15:54:32] [INFO] Client login/register request sent
+[2024-10-21 15:54:40] [DEBUG] Message sent: LOGIN:rtr:uwu
+[2024-10-21 15:54:44] [DEBUG] Message sent: vgigv
+[2024-10-21 15:55:48] [INFO] Client socket created
+[2024-10-21 15:55:48] [INFO] Connected to server
+[2024-10-21 15:55:50] [INFO] Client login/register request sent
+[2024-10-21 15:55:54] [DEBUG] Message sent: LOGIN:rtr:uwu
+[2024-10-21 15:55:56] [DEBUG] Message sent: nmknkn
+[2024-10-21 16:06:11] [INFO] Client socket created
+[2024-10-21 16:06:11] [INFO] Connected to server
+[2024-10-21 16:06:13] [INFO] Client login/register request sent
+[2024-10-21 16:06:17] [DEBUG] Message sent: LOGIN:rtr:uwu
+[2024-10-21 16:06:19] [DEBUG] Message sent: gigiii
+[2024-10-21 16:06:35] [DEBUG] Message sent: nmqnq
+[2024-10-21 16:07:03] [INFO] Client socket created
+[2024-10-21 16:07:03] [INFO] Connected to server
+[2024-10-21 16:07:05] [INFO] Client login/register request sent
+[2024-10-21 16:07:09] [DEBUG] Message sent: REGISTER:ff:gg
+[2024-10-21 16:29:43] [INFO] Client socket created
+[2024-10-21 16:29:43] [INFO] Connected to server
+[2024-10-21 16:29:45] [INFO] Client login/register request sent
+[2024-10-21 16:29:49] [DEBUG] Message sent: LOGIN:rtr:uwu
+[2024-10-21 16:29:52] [DEBUG] Message sent: giygi
+[2024-10-21 16:29:54] [DEBUG] Message sent: igg
+[2024-10-21 16:30:01] [INFO] Client socket created
+[2024-10-21 16:30:01] [INFO] Connected to server
+[2024-10-21 16:30:03] [INFO] Client login/register request sent
+[2024-10-21 16:30:07] [DEBUG] Message sent: REGISTER:tt:ww
+[2024-10-21 16:30:12] [INFO] Client socket created
+[2024-10-21 16:30:12] [INFO] Connected to server
+[2024-10-21 16:30:14] [INFO] Client login/register request sent
+[2024-10-21 16:30:16] [DEBUG] Message sent: REGISTER:tt:ww
+[2024-10-21 16:30:16] [WARN] Registration failed: User already registered
+[2024-10-21 16:30:27] [INFO] Client socket created
+[2024-10-21 16:30:27] [INFO] Connected to server
+[2024-10-21 16:30:28] [INFO] Client login/register request sent
+[2024-10-21 16:30:32] [DEBUG] Message sent: LOGIN:tt:ww
+[2024-10-21 16:30:57] [INFO] Client socket created
+[2024-10-21 16:30:57] [INFO] Connected to server
+[2024-10-21 16:31:01] [INFO] Client login/register request sent
+[2024-10-21 16:31:04] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-21 16:31:07] [DEBUG] Message sent: gvfgv
+[2024-10-21 16:31:10] [DEBUG] Message sent: gvfvf
+[2024-10-21 17:35:56] [INFO] Client socket created
+[2024-10-21 17:35:56] [INFO] Connected to server
+[2024-10-21 17:35:58] [INFO] Client login/register request sent
+[2024-10-21 17:36:04] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-21 17:36:06] [DEBUG] Message sent: kl
+[2024-10-21 17:37:51] [INFO] Client socket created
+[2024-10-21 17:37:51] [INFO] Connected to server
+[2024-10-21 17:37:54] [INFO] Client login/register request sent
+[2024-10-21 17:40:48] [INFO] Client socket created
+[2024-10-21 17:40:48] [INFO] Connected to server
+[2024-10-21 17:40:55] [INFO] Client socket created
+[2024-10-21 17:40:55] [INFO] Connected to server
+[2024-10-21 17:40:58] [INFO] Client login/register request sent
+[2024-10-21 17:41:02] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-21 17:41:05] [DEBUG] Message sent: kll
+[2024-10-21 17:41:12] [INFO] Client login/register request sent
+[2024-10-21 17:41:17] [DEBUG] Message sent: REGISTER:gud:edg
+[2024-10-21 17:41:24] [INFO] Client socket created
+[2024-10-21 17:41:24] [INFO] Connected to server
+[2024-10-21 17:41:27] [INFO] Client login/register request sent
+[2024-10-21 17:41:35] [INFO] Client socket created
+[2024-10-21 17:41:35] [INFO] Connected to server
+[2024-10-21 17:41:36] [INFO] Client login/register request sent
+[2024-10-21 17:41:40] [DEBUG] Message sent: REGISTER:gud:edg
+[2024-10-21 17:41:40] [WARN] Registration failed: User already registered
+[2024-10-21 17:41:44] [INFO] Client socket created
+[2024-10-21 17:41:44] [INFO] Connected to server
+[2024-10-21 17:41:46] [INFO] Client login/register request sent
+[2024-10-21 17:41:49] [DEBUG] Message sent: LOGIN:gud:edg
+[2024-10-21 17:41:52] [DEBUG] Message sent: khoor
+[2024-10-21 17:41:58] [DEBUG] Message sent: ixq
+[2024-10-21 17:42:05] [INFO] Client socket created
+[2024-10-21 17:42:05] [INFO] Connected to server
+[2024-10-21 17:42:13] [INFO] Client socket created
+[2024-10-21 17:42:13] [INFO] Connected to server
+[2024-10-21 17:42:14] [INFO] Client login/register request sent
+[2024-10-21 17:42:18] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-21 17:42:21] [INFO] Client login/register request sent
+[2024-10-21 17:42:25] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-21 17:42:25] [WARN] Login/Registration failed
+[2024-10-21 17:43:21] [WARN] Connection closed or error
+[2024-10-21 17:43:21] [INFO] Socket closed after receiving messages
+[2024-10-21 17:45:11] [INFO] Client socket created
+[2024-10-21 17:45:11] [INFO] Connected to server
+[2024-10-21 17:45:18] [INFO] Client socket created
+[2024-10-21 17:45:18] [INFO] Connected to server
+[2024-10-21 17:45:22] [INFO] Client login/register request sent
+[2024-10-21 17:45:29] [DEBUG] Message sent: REGISTER:sun:vxq
+[2024-10-21 17:45:41] [INFO] Client socket created
+[2024-10-21 17:45:41] [INFO] Connected to server
+[2024-10-21 17:45:46] [FATAL] Invalid input for login/register choice
+[2024-10-21 17:45:49] [INFO] Client socket created
+[2024-10-21 17:45:49] [INFO] Connected to server
+[2024-10-21 17:45:50] [INFO] Client login/register request sent
+[2024-10-21 17:45:53] [DEBUG] Message sent: LOGIN:sun:vxq
+[2024-10-21 17:45:57] [DEBUG] Message sent: 
+[2024-10-21 17:46:07] [INFO] Client socket created
+[2024-10-21 17:46:07] [INFO] Connected to server
+[2024-10-21 17:46:09] [INFO] Client login/register request sent
+[2024-10-21 17:46:13] [DEBUG] Message sent: REGISTER:sun:vxq
+[2024-10-21 17:46:13] [WARN] Registration failed: User already registered
+[2024-10-21 17:46:17] [INFO] Client socket created
+[2024-10-21 17:46:17] [INFO] Connected to server
+[2024-10-21 17:46:18] [INFO] Client login/register request sent
+[2024-10-21 17:46:21] [DEBUG] Message sent: LOGIN:sun:vxq
+[2024-10-21 17:46:23] [INFO] Client login/register request sent
+[2024-10-21 17:46:27] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-21 17:46:30] [DEBUG] Message sent: kl
+[2024-10-21 17:46:33] [DEBUG] Message sent: khoor
+[2024-10-21 17:46:41] [INFO] Client socket created
+[2024-10-21 17:46:41] [INFO] Connected to server
+[2024-10-21 17:46:42] [INFO] Client login/register request sent
+[2024-10-21 17:46:45] [DEBUG] Message sent: LOGIN:sun:vxq
+[2024-10-21 17:46:45] [WARN] Login/Registration failed
+[2024-10-21 17:47:19] [WARN] Connection closed or error
+[2024-10-21 17:47:19] [INFO] Socket closed after receiving messages
+[2024-10-21 17:50:59] [INFO] Client socket created
+[2024-10-21 17:50:59] [INFO] Connected to server
+[2024-10-21 17:51:01] [INFO] Client login/register request sent
+[2024-10-21 17:51:04] [DEBUG] Message sent: LOGIN:sun:vxq
+[2024-10-21 17:51:07] [DEBUG] Message sent: kl
+[2024-10-21 17:51:12] [INFO] Client socket created
+[2024-10-21 17:51:12] [INFO] Connected to server
+[2024-10-21 17:51:13] [INFO] Client login/register request sent
+[2024-10-21 17:51:17] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-21 17:51:19] [DEBUG] Message sent: kkll
+[2024-10-21 17:51:24] [INFO] Client socket created
+[2024-10-21 17:51:24] [INFO] Connected to server
+[2024-10-21 17:51:25] [INFO] Client login/register request sent
+[2024-10-21 17:51:28] [DEBUG] Message sent: LOGIN:sun:vxq
+[2024-10-21 17:51:30] [DEBUG] Message sent: klll
+[2024-10-21 17:51:34] [DEBUG] Message sent: =zt
+[2024-10-21 17:51:44] [INFO] Client socket created
+[2024-10-21 17:51:44] [INFO] Connected to server
+[2024-10-21 17:51:45] [INFO] Client login/register request sent
+[2024-10-21 17:51:51] [DEBUG] Message sent: LOGIN:sun:vxq
+[2024-10-21 17:51:51] [WARN] Login/Registration failed
+[2024-10-21 17:53:04] [WARN] Connection closed or error
+[2024-10-21 17:53:04] [INFO] Socket closed after receiving messages
+[2024-10-22 04:11:18] [INFO] Client socket created
+[2024-10-22 04:11:18] [INFO] Connected to server
+[2024-10-22 04:11:23] [INFO] Client login/register request sent
+[2024-10-22 04:11:28] [DEBUG] Message sent: REGISTER:res:uhv
+[2024-10-22 04:11:28] [WARN] Registration failed: User already registered
+[2024-10-22 04:11:37] [INFO] Client socket created
+[2024-10-22 04:11:37] [INFO] Connected to server
+[2024-10-22 04:11:42] [INFO] Client login/register request sent
+[2024-10-22 04:11:45] [DEBUG] Message sent: LOGIN:res:uhv
+[2024-10-22 04:11:47] [DEBUG] Message sent: gfygfygi
+[2024-10-22 04:11:49] [DEBUG] Message sent: mnqn
+[2024-10-22 04:14:25] [INFO] Client socket created
+[2024-10-22 04:14:25] [INFO] Connected to server
+[2024-10-22 04:14:34] [INFO] Client login/register request sent
+[2024-10-22 04:14:38] [DEBUG] Message sent: LOGIN:res:uhv
+[2024-10-22 04:14:38] [WARN] Login/Registration failed
+[2024-10-22 04:16:00] [INFO] Client socket created
+[2024-10-22 04:16:00] [INFO] Connected to server
+[2024-10-22 04:16:05] [INFO] Client login/register request sent
+[2024-10-22 04:16:13] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-22 04:16:15] [DEBUG] Message sent: vgfgi
+[2024-10-22 04:16:17] [DEBUG] Message sent: iyg
+[2024-10-22 04:16:24] [INFO] Client socket created
+[2024-10-22 04:16:24] [INFO] Connected to server
+[2024-10-22 04:16:25] [INFO] Client login/register request sent
+[2024-10-22 04:16:31] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-22 04:16:31] [WARN] Login/Registration failed
+[2024-10-22 04:17:41] [INFO] Client socket created
+[2024-10-22 04:17:41] [INFO] Connected to server
+[2024-10-22 04:17:43] [INFO] Client login/register request sent
+[2024-10-22 04:17:50] [DEBUG] Message sent: LOGIN:res:uhv
+[2024-10-22 04:17:52] [DEBUG] Message sent: fgifgiy
+[2024-10-22 04:17:56] [DEBUG] Message sent: fgg
+[2024-10-22 04:18:00] [INFO] Client socket created
+[2024-10-22 04:18:00] [INFO] Connected to server
+[2024-10-22 04:18:01] [INFO] Client login/register request sent
+[2024-10-22 04:18:04] [DEBUG] Message sent: LOGIN:res:uhv
+[2024-10-22 04:18:04] [WARN] Login/Registration failed
+[2024-10-22 04:18:25] [INFO] Client socket created
+[2024-10-22 04:18:25] [INFO] Connected to server
+[2024-10-22 04:18:27] [INFO] Client login/register request sent
+[2024-10-22 04:18:42] [DEBUG] Message sent: REGISTER:bobby:srr
+[2024-10-22 04:18:47] [INFO] Client socket created
+[2024-10-22 04:18:47] [INFO] Connected to server
+[2024-10-22 04:18:49] [INFO] Client login/register request sent
+[2024-10-22 04:18:54] [DEBUG] Message sent: LOGIN:bobby:srr
+[2024-10-22 04:18:57] [DEBUG] Message sent: pqepqe
+[2024-10-22 04:19:02] [DEBUG] Message sent: pp
+[2024-10-22 04:19:06] [INFO] Client socket created
+[2024-10-22 04:19:06] [INFO] Connected to server
+[2024-10-22 04:19:08] [INFO] Client login/register request sent
+[2024-10-22 04:19:12] [DEBUG] Message sent: LOGIN:jhbj:njm
+[2024-10-22 04:19:12] [WARN] Login/Registration failed
+[2024-10-22 04:19:18] [INFO] Client socket created
+[2024-10-22 04:19:18] [INFO] Connected to server
+[2024-10-22 04:19:21] [WARN] invalid choice
+[2024-10-22 04:19:34] [INFO] Client socket created
+[2024-10-22 04:19:34] [INFO] Connected to server
+[2024-10-22 04:19:35] [INFO] Client login/register request sent
+[2024-10-22 04:19:43] [DEBUG] Message sent: LOGIN:bobby:srr
+[2024-10-22 04:19:45] [DEBUG] Message sent: gifg
+[2024-10-22 04:20:01] [INFO] Client socket created
+[2024-10-22 04:20:01] [INFO] Connected to server
+[2024-10-22 04:20:03] [INFO] Client login/register request sent
+[2024-10-22 04:20:08] [DEBUG] Message sent: LOGIN:bobby:srr
+[2024-10-22 04:20:08] [WARN] Login/Registration failed
+[2024-10-22 04:47:19] [INFO] Client socket created
+[2024-10-22 04:47:19] [INFO] Connected to server
+[2024-10-22 04:47:23] [INFO] Client login/register request sent
+[2024-10-22 04:47:28] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-22 04:47:30] [DEBUG] Message sent: mkjymk
+[2024-10-22 04:47:35] [INFO] Client socket created
+[2024-10-22 04:47:35] [INFO] Connected to server
+[2024-10-22 04:47:37] [INFO] Client login/register request sent
+[2024-10-22 04:47:41] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-22 04:47:41] [WARN] Login/Registration failed
+[2024-10-22 04:47:51] [INFO] Client socket created
+[2024-10-22 04:47:51] [INFO] Connected to server
+[2024-10-22 04:47:56] [WARN] invalid choice
+[2024-10-22 04:47:59] [INFO] Client socket created
+[2024-10-22 04:47:59] [INFO] Connected to server
+[2024-10-22 04:48:01] [INFO] Client login/register request sent
+[2024-10-22 04:48:17] [DEBUG] Message sent: REGISTER:shanaya:glvfr
+[2024-10-22 04:48:27] [INFO] Client socket created
+[2024-10-22 04:48:27] [INFO] Connected to server
+[2024-10-22 04:48:31] [INFO] Client login/register request sent
+[2024-10-22 04:48:37] [DEBUG] Message sent: REGISTER:shanaya:glvfr
+[2024-10-22 04:48:37] [WARN] Registration failed: User already registered
+[2024-10-22 04:48:50] [INFO] Client socket created
+[2024-10-22 04:48:50] [INFO] Connected to server
+[2024-10-22 04:48:54] [INFO] Client login/register request sent
+[2024-10-22 04:49:00] [DEBUG] Message sent: LOGIN:shanaya:glvfr
+[2024-10-22 04:49:00] [WARN] Login/Registration failed
+[2024-10-22 04:49:16] [INFO] Client socket created
+[2024-10-22 04:49:16] [INFO] Connected to server
+[2024-10-22 04:49:19] [INFO] Client login/register request sent
+[2024-10-22 04:49:28] [DEBUG] Message sent: LOGIN:shanaya:glvfr
+[2024-10-22 04:49:28] [WARN] Login/Registration failed
+[2024-10-22 04:51:30] [INFO] Client socket created
+[2024-10-22 04:51:30] [INFO] Connected to server
+[2024-10-22 04:51:35] [INFO] Client login/register request sent
+[2024-10-22 04:51:44] [INFO] Client socket created
+[2024-10-22 04:51:44] [INFO] Connected to server
+[2024-10-22 04:51:46] [INFO] Client login/register request sent
+[2024-10-22 04:51:54] [DEBUG] Message sent: LOGIN:shanaya:glvfr
+[2024-10-22 04:51:54] [WARN] Login/Registration failed
+[2024-10-22 04:51:59] [INFO] Client socket created
+[2024-10-22 04:51:59] [INFO] Connected to server
+[2024-10-22 04:52:01] [INFO] Client login/register request sent
+[2024-10-22 04:52:05] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-22 04:52:26] [DEBUG] Message sent: igygi
+[2024-10-22 04:52:32] [INFO] Client socket created
+[2024-10-22 04:52:32] [INFO] Connected to server
+[2024-10-22 04:52:34] [INFO] Client login/register request sent
+[2024-10-22 04:52:47] [DEBUG] Message sent: REGISTER:oooguu:sxjx
+[2024-10-22 04:52:50] [INFO] Client socket created
+[2024-10-22 04:52:50] [INFO] Connected to server
+[2024-10-22 04:52:53] [INFO] Client login/register request sent
+[2024-10-22 04:53:05] [DEBUG] Message sent: LOGIN:oooguu:sxjx
+[2024-10-22 04:53:05] [WARN] Login/Registration failed
+[2024-10-22 04:53:16] [INFO] Client socket created
+[2024-10-22 04:53:16] [INFO] Connected to server
+[2024-10-22 04:53:17] [INFO] Client login/register request sent
+[2024-10-22 04:53:26] [DEBUG] Message sent: REGISTER:yut:wx
+[2024-10-22 04:53:29] [INFO] Client socket created
+[2024-10-22 04:53:29] [INFO] Connected to server
+[2024-10-22 04:53:36] [INFO] Client login/register request sent
+[2024-10-22 04:53:42] [INFO] Client socket created
+[2024-10-22 04:53:42] [INFO] Connected to server
+[2024-10-22 04:53:43] [INFO] Client login/register request sent
+[2024-10-22 04:53:48] [DEBUG] Message sent: LOGIN:yut:wx
+[2024-10-22 05:17:55] [INFO] Client socket created
+[2024-10-22 05:17:55] [INFO] Connected to server
+[2024-10-22 05:18:02] [INFO] Client login/register request sent
+[2024-10-22 05:18:07] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-22 05:18:18] [INFO] Client socket created
+[2024-10-22 05:18:18] [INFO] Connected to server
+[2024-10-22 05:18:20] [INFO] Client login/register request sent
+[2024-10-22 05:18:24] [DEBUG] Message sent: LOGIN:rrr:uuu
+[2024-10-22 05:18:24] [WARN] Login/Registration failed
+[2024-10-22 05:18:32] [DEBUG] Message sent: giygiy
+[2024-10-22 05:18:35] [DEBUG] Message sent: gfigv
+[2024-10-22 05:18:39] [INFO] Client socket created
+[2024-10-22 05:18:39] [INFO] Connected to server
+[2024-10-22 05:18:43] [INFO] Client login/register request sent
+[2024-10-22 05:18:47] [DEBUG] Message sent: LOGIN:res:uhv
+[2024-10-22 05:18:49] [DEBUG] Message sent: gyigi
+[2024-10-22 05:18:52] [DEBUG] Message sent: pme
+[2024-10-22 05:18:56] [INFO] Client socket created
+[2024-10-22 05:18:56] [INFO] Connected to server
+[2024-10-22 05:18:57] [INFO] Client login/register request sent
+[2024-10-22 05:19:19] [DEBUG] Message sent: REGISTER:malvika:kll
+[2024-10-22 05:19:21] [INFO] Client socket created
+[2024-10-22 05:19:21] [INFO] Connected to server
+[2024-10-22 05:19:23] [INFO] Client login/register request sent
+[2024-10-22 05:19:28] [DEBUG] Message sent: LOGIN:malvika:kll
+[2024-10-22 05:19:28] [WARN] Login/Registration failed
+[2024-10-22 05:19:37] [INFO] Client socket created
+[2024-10-22 05:19:37] [INFO] Connected to server
+[2024-10-22 05:19:40] [INFO] Client login/register request sent
+[2024-10-22 05:19:47] [DEBUG] Message sent: REGISTER:maa:ehwd
+[2024-10-22 05:19:51] [INFO] Client socket created
+[2024-10-22 05:19:51] [INFO] Connected to server
+[2024-10-22 05:19:53] [INFO] Client login/register request sent
+[2024-10-22 05:19:57] [DEBUG] Message sent: LOGIN:maa:ehwd
+[2024-10-22 05:19:59] [DEBUG] Message sent: gijygi
+[2024-10-22 05:20:03] [DEBUG] Message sent: nen
+[2024-10-22 05:20:07] [INFO] Client socket created
+[2024-10-22 05:20:07] [INFO] Connected to server
+[2024-10-22 05:20:09] [WARN] invalid choice
+[2024-10-22 05:20:11] [INFO] Client socket created
+[2024-10-22 05:20:11] [INFO] Connected to server
+[2024-10-22 05:20:14] [INFO] Client login/register request sent
+[2024-10-22 05:20:19] [DEBUG] Message sent: REGISTER:maa:ehwd
+[2024-10-22 05:20:19] [WARN] Registration failed: User already registered
+[2024-10-22 05:20:49] [WARN] Connection closed or error
+[2024-10-22 05:20:49] [INFO] Socket closed after receiving messages

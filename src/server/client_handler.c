@@ -7,7 +7,7 @@
  *
  *   REVISION HISTORY:
  *
- *   Name : Pranavya Deepthi Dachepalli             Date : 16/10/24
+ *   Name : Shrishti Maheshwari             Date : 16/10/24
  *   Reason : created function for handling client and server communication.
  *
  *   Name : Priyanka Solanki, Shaista Parveen       Date : 17/10/24
@@ -25,7 +25,11 @@
 #include "/home2/user15/GROUP3_SPRINT_EXECUTION/GROUP3_SPRINT_EXECUTION/include/logger.h"
 #define BUFFER_SIZE 1024
 
-extern int client_sockets[MAX_CLIENTS]; // Client socket array
+//extern int client_sockets[MAX_CLIENTS]; // Client socket array
+ 
+#define MAX_USERNAME_LENGTH 256
+
+extern ClientInfo client_sockets[MAX_CLIENTS]; // Array of ClientInfo structures
 extern pthread_mutex_t mutex; // Mutex for thread safety
  
 void *handle_client(void *arg) {
@@ -36,7 +40,7 @@ void *handle_client(void *arg) {
     while (1) {
         int bytes_received = recv(client_socket, buffer, sizeof(buffer), 0);
         if (bytes_received <= 0) {
-            printf("Client disconnected: %d\n", client_socket);
+            printf("Client disconnected\n");
             break; // Connection closed
         }
         buffer[bytes_received] = '\0'; // Null-terminate the received message
@@ -50,12 +54,14 @@ void *handle_client(void *arg) {
             handle_authentication(client_socket, username, password, 1); // Register user
         } else if (strcmp(command, "LOGIN") == 0) {
             printf("Login attempt from %s\n", username);
-            if (handle_authentication(client_socket, username, password, 0)) { // Login user
+			int login_result=handle_authentication(client_socket,username,password,0);
+            if (login_result==1) { // Login user
                 // Add client socket to the list of connected clients
                 pthread_mutex_lock(&mutex);
                 for (int i = 0; i < MAX_CLIENTS; i++) {
-                    if (client_sockets[i] == 0) {
-                        client_sockets[i] = client_socket;
+                    if (client_sockets[i].socket == 0) {
+                        client_sockets[i].socket = client_socket;
+						strncpy(client_sockets[i].username, username, MAX_USERNAME_LENGTH);
                         break;
                     }
                 }
@@ -64,7 +70,12 @@ void *handle_client(void *arg) {
                     perror("Failed to send login success message");
                 }
 				printf("%s logged in successfully.\n", username);
-            } else {
+            } else if(login_result==-1) {
+              if(send(client_socket,"User already logged in",22,0)<0){
+              perror("Failed to send user already logged in message");
+
+			}
+			printf("Login failed: User %s already logged in.\n", username);
                 if (send(client_socket, "Login failed", 12, 0) < 0) {
                     perror("Failed to send login failed message");
                 }
@@ -89,14 +100,15 @@ void *handle_client(void *arg) {
     // Remove client socket from the list
     pthread_mutex_lock(&mutex);
     for (int i = 0; i < MAX_CLIENTS; i++) {
-        if (client_sockets[i] == client_socket) {
-            client_sockets[i] = 0; // Mark as free
+        if (client_sockets[i].socket == client_socket) {
+            client_sockets[i].socket = 0; // Mark as free
+			memset(client_sockets[i].username, 0, sizeof(client_sockets[i].username)); // Clear username
             break;
         }
     }
     pthread_mutex_unlock(&mutex);
  
     close(client_socket);
-    printf("Client socket closed: %d\n", client_socket);
+    printf("Client socket closed\n");
     return NULL;
 }

@@ -7,7 +7,7 @@
  *
  *   REVISION HISTORY:
  *
- *   Name : Deepali Kumari, Prerna Sharma             Date : 16/10/24
+ *   Name :  Prerna Sharma             Date : 16/10/24
  *   Reason : establishing connection that client is requestiong for
  *
  *   Name : Priyanka Solanki, Shaista Parveen       Date : 17/10/24
@@ -27,7 +27,7 @@
 
 #define MAX_CLIENTS 100
 
-int client_sockets[MAX_CLIENTS] = {0}; // Initialize all to 0
+ClientInfo client_sockets[MAX_CLIENTS] = {0}; // Initialize all to 0
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
 int main() {

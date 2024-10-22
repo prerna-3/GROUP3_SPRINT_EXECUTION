@@ -17,5 +17,9 @@ int handle_authentication(int client_socket, const char *username, const char *p
 void encryption(char *text);
 void decryption(char *text);
 
+typedef struct {
+    int socket;
+    char username[256];
+} ClientInfo;
 
 #endif // FUNCTIONS_H
